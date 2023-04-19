@@ -141,19 +141,19 @@
 }
 
 .img-1 {
-    background: url(/menu-img/creamy-baked-mussels.jpg);
+    background: url(menu-img/creamy-baked-mussels.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .img-2 {
-    background: url(/menu-img/coconut-crab.jpg);
+    background: url(menu-img/coconut-crab.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .img-3 {
-    background: url(/menu-img/drunk-shrimp.jpg);
+    background: url(menu-img/drunk-shrimp.jpg);
     background-position: center;
     background-size: cover;
 }
