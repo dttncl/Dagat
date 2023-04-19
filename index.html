@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>Dagat Restaurant</title>
+    <link href="/dagat-logo-no-bg.png" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/normalize.css" rel="stylesheet" />
+    <link href="/index.css" rel="stylesheet" />
+    <link href="/dagat-home.css" rel="stylesheet" />
+    <link href="/media.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="header-nav">
+            <div class="burger-nav" id="burger-nav-div">
+                <span id="burger-span1"></span>
+                <span id="burger-span2"></span>
+                <span id="burger-span3"></span>
+            </div>
+
+            <div class="header-icon-crab"><img src="dagat-crab-logo.png" /></div>
+
+            <!--NAVIGATION SIDEBAR-->
+            <nav class="collapse-nav main-text" id="main-nav-menu">
+                <a href="/index.html">HOME</a>
+                <a href="/dagat-menu.html" id="menu-link">MENU</a>
+                <a href="/dagat-checkout.html">VIEW CART</a>
+                <a href="/dagat-staff.html" id="staff-link">STAFF DASHBOARD</a>
+                <a href="" id="switch-acc">SWITCH USER</a>
+            </nav>
+
+            <!--ORDER CART-->
+            <button class="header-icon-cart" id="order-cart"></button>
+            <div id="collapse-cart">
+                <h3 class="main-text">Cart Summary</h3>
+                <table class="content-text" id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th><i class="fa fa-trash-o"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="cart-bottom">
+                    <p class="main-text">TOTAL PRICE: $</p>
+                    <p id="total-price" class="main-text">0</p>
+                    <button type="button" onclick="window.location.href='/dagat-checkout.html'" id="btn-checkout">CHECKOUT</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!--BANNER-->
+        <div class="banner">
+            <div class="banner-content">
+                <h1 class="main-text">WELCOME ABOARD!</h1>
+                <h2 class="main-text">sail with us through the flavors of the pearl of the orient seas</h2>
+            </div>
+            <div class="reserve-link main-text">
+                <a href="#dagat-location">COME VISIT US</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-about">
+            <img src="wave-border.png" class="border" />
+            <div class="about-text">
+                <div class="featured-text">
+                    <h3 class="main-text">dagat</h3>
+                    <p class="caption">(noun, meaning sea or ocean)</>
+                    <p class="content-text">dagat is a casual dining restaurant ready to satisfy your seafood cravings. Our mission is to offer our customers the freshest and most delicious seafood dishes while providing a warm and welcoming atmosphere that reflects the vibrant culture of the Philippines. In addition to seafood, we also offer a range of other traditional Filipino dishes, such as our succulent lechon kawali (crispy pork belly) and our famous chicken adobo.</p>
+                    <p class="content-text">
+                        We look forward to serving you the best seafood and traditional Filipino dishes that will make you feel like you've been transported to the islands of the Philippines.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-img">
+                <div class="featured-img"></div>
+            </div>
+        </section>
+
+        <section class="section-menu">
+            <video autoplay muted loop>
+                <source src="tubbataha.mp4" type="video/mp4" />
+            </video>
+
+            <div class="menu-text">
+                <h3 class="main-text">under the sea</h3>
+                <p class="main-text">"Experience the Richness and Diversity of the sea - Fresh, Sustainable, and Delightful!"</p>
+                <a href="/dagat-menu.html" class="main-text">view menu</a>
+            </div>
+
+            <div class="menu-items">
+                <div class="item-container">
+                    <div class="item-img img-1"></div>
+                    <div class="item-desc desc-1">
+                        <h3 class="main-text center-text">Baked Mussels $12</h3>
+                        <p class="main-text center-text">Juicy and tasty with a creamy, cheesy, perfectly sweet, and mildly spicy topping</p>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <div class="item-img img-2"></div>
+                    <div class="item-desc desc-2">
+                        <h3 class="main-text center-text">Coconut Crab $15</h3>
+                        <p class="main-text center-text">scrumptious crab dish in a spicy, creamy coconut sauce with long beans and squash</p>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <div class="item-img img-3"></div>
+                    <div class="item-desc desc-3">
+                        <h3 class="main-text center-text">Drunk Shrimp $10</h3>
+                        <p class="main-text center-text">marinated in gin and deep-fried to golden perfection are the perfect beer match</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="logo-container">
+                <div class="footer-logo"></div>
+            </div>
+            <div class="sitemap">
+                <h3 class="main-text">SITEMAP</h3>
+                <a href="/index.html" class="content-text">HOME</a>
+                <a href="/dagat-menu.html" class="content-text">MENU</a>
+                <a href="/dagat-checkout.html" class="content-text">VIEW CART</a>
+            </div>
+            <div class="location">
+                <h3 class="main-text" id="dagat-location">LOCATION</h3>
+                <p class="content-text center-text">1664 Victoria Park Ave,<br />Toronto, Ontario M4A 2M5<br />phone: +1-416-285-9945</p>
+            </div>
+            <div class="hours">
+                <h3 class="main-text">OPENING HOURS</h3>
+                <table class="content-text center-text">
+                    <tr>
+                        <td>Lunch</td>
+                        <td>Dinner</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday and Sunday</td>
+                        <td>Thursday to Sunday</td>
+                    </tr>
+                    <tr>
+                        <td>Reservations</td>
+                        <td>Reservations</td>
+                    </tr>
+                    <tr>
+                        <td>from 12pm to 1.30pm</td>
+                        <td>from 6pm to 8.45pm</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="subscribe">
+                <h3 class="main-text">SUBSCRIBE TO FRESHNESS</h3>
+                <div class="sub-form">
+                    <form class="content-text" id="subscribe-form">
+                        <label for="firstName">FIRST NAME: </label>
+                        <input id="firstName" name="firstName"/>
+
+                        <label for="lastName">LAST NAME: </label>
+                        <input id="lastName" required maxlength="20" name="lastName"/>
+
+                        <label for="email">EMAIL: </label>
+                        <input id="email" type="email" name="email"/>
+
+                        <label for="phone">PHONE: </label>
+                        <input id="phone" type="tel" name="tel"/>
+
+                        <button type="submit" class="main-text" id="btn-subscribe">SIGN UP</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p class="main-text">Copyright &copy; 2023, DAGAT RESTAURANT</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
+<!--bnhf-->

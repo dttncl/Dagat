@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>Dagat Restaurant - Menu</title>
+    <link href="/dagat-logo-no-bg.png" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/normalize.css" rel="stylesheet" />
+    <link href="/index.css" rel="stylesheet" />
+    <link href="/dagat-menu.css" rel="stylesheet" />
+    <link href="/media.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="header-nav">
+            <div class="burger-nav" id="burger-nav-div">
+                <span id="burger-span1"></span>
+                <span id="burger-span2"></span>
+                <span id="burger-span3"></span>
+            </div>
+
+            <div class="header-icon-crab"><img src="dagat-crab-logo.png" /></div>
+
+            <!--NAVIGATION SIDEBAR-->
+            <nav class="collapse-nav main-text" id="main-nav-menu">
+                <a href="/index.html">HOME</a>
+                <a href="/dagat-menu.html" id="menu-link">MENU</a>
+                <a href="/dagat-checkout.html">VIEW CART</a>
+                <a href="/dagat-staff.html" id="staff-link">STAFF DASHBOARD</a>
+                <a href="" id="switch-acc">SWITCH USER</a>
+            </nav>
+
+            <!--ORDER CART-->
+            <button class="header-icon-cart" id="order-cart"></button>
+            <div id="collapse-cart">
+                <h3 class="main-text">Cart Summary</h3>
+                <table class="content-text" id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th><i class="fa fa-trash-o"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="cart-bottom">
+                    <p class="main-text">TOTAL PRICE: $</p>
+                    <p id="total-price" class="main-text">0</p>
+                    <button type="button" onclick="window.location.href='/dagat-checkout.html'" id="btn-checkout">CHECKOUT</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!--BANNER-->
+        <div class="banner">
+            <div class="menu-page-title banner-content">
+                <h1 class="main-text">MENU</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-main-menu">
+            <div class="tab">
+                <button class="tabLink main-text" onclick="openMenu(event, 'Appetizers')" id="defaultOpen">APPETIZERS</button>
+                <button class="tabLink main-text" onclick="openMenu(event, 'Specials')">SPECIALS</button>
+                <button class="tabLink main-text" onclick="openMenu(event, 'Platters')">PLATTERS</button>
+                <button class="tabLink main-text" onclick="openMenu(event, 'Desserts')">DESSERTS</button>
+                <button class="tabLink main-text" onclick="openMenu(event, 'Salads')">SALADS</button>
+                <button class="tabLink main-text" onclick="openMenu(event, 'Drinks')">DRINKS</button>
+            </div>
+
+            <!--Appetizers-->
+            <div id="Appetizers" class="tabContent">
+                <div class="tab-items-container">
+
+                    <div class="tab-menu-item app-item" id="menu-item-1">
+                        <button class="add-cart" type="button" name="appetizer" value="app-1"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Crispy Anchovy</h3>
+                            <p class="main-text center-text">$10</p>
+                        </div>
+                        <p class="main-text center-text">lightly battered  anchovies before being deep-fried and served hot</p>
+                    </div>
+
+                    <div class="tab-menu-item app-item" id="menu-item-2">
+                        <button class="add-cart" type="button" name="appetizer" value="app-2"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Drunk Shrimp</h3>
+                            <p class="main-text center-text">$10</p>
+                        </div>
+                        <p class="main-text center-text">marinated in gin and deep-fried to golden perfection are the perfect beer match</p>
+                    </div>
+
+                    <div class="tab-menu-item app-item" id="menu-item-3">
+                        <button class="add-cart" type="button" name="appetizer" value="app-3"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Grilled Squid</h3>
+                            <p class="main-text center-text">$10</p>
+                        </div>
+                        <p class="main-text center-text">marinated in a sweet and tangy vinaigrette and stuffed with tomatoes and onions</p>
+                    </div>
+
+                    <div class="tab-menu-item app-item" id="menu-item-4">
+                        <button class="add-cart" type="button" name="appetizer" value="app-4"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Catfish Adobo</h3>
+                            <p class="main-text center-text">$11</p>
+                        </div>
+                        <p class="main-text center-text">pan-fried catfish simmered in tangy and savory vinegar and soy sauce mixture until flavorful</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Specials-->
+            <div id="Specials" class="tabContent">
+                <div class="tab-items-container">
+
+                    <div class="tab-menu-item spc-item" id="menu-item-1">
+                        <button class="add-cart" type="button" name="specials" value="spc-1"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Coconut Crab</h3>
+                            <p class="main-text center-text">$15</p>
+                        </div>
+                        <p class="main-text center-text">scrumptious crab dish in a spicy, creamy coconut sauce with long beans and squash</p>
+                    </div>
+
+                    <div class="tab-menu-item spc-item" id="menu-item-2">
+                        <button class="add-cart" type="button" name="specials" value="spc-2"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Baked Mussels</h3>
+                            <p class="main-text center-text">$12</p>
+                        </div>
+                        <p class="main-text center-text">Juicy and tasty with a creamy, cheesy, perfectly sweet, and mildly spicy topping</p>
+                    </div>
+
+                    <div class="tab-menu-item spc-item" id="menu-item-3">
+                        <button class="add-cart" type="button" name="specials" value="spc-3"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Pork Dinakdakan</h3>
+                            <p class="main-text center-text">$12</p>
+                        </div>
+                        <p class="main-text center-text">made with grilled pork parts tossed in a calamansi dressing with onions and chili peppers</p>
+                    </div>
+
+                    <div class="tab-menu-item spc-item" id="menu-item-4">
+                        <button class="add-cart" type="button" name="specials" value="spc-4"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Pork Belly Roll</h3>
+                            <p class="main-text center-text">$20</p>
+                        </div>
+                        <p class="main-text center-text">slow-roasted in the oven for super crispy skin and super moist meat</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Platters-->
+            <div id="Platters" class="tabContent">
+                <div class="tab-items-container">
+
+                    <div class="tab-menu-item plt-item" id="menu-item-1">
+                        <button class="add-cart" type="button" name="platters" value="plt-1"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Beef Marrow Stew</h3>
+                            <p class="main-text center-text">$12</p>
+                        </div>
+                        <p class="main-text center-text">made with tender beef shanks, veggies, and a flavorful broth</p>
+                    </div>
+
+                    <div class="tab-menu-item plt-item" id="menu-item-2">
+                        <button class="add-cart" type="button" name="platters" value="plt-2"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Fried Rice</h3>
+                            <p class="main-text center-text">$15</p>
+                        </div>
+                        <p class="main-text center-text">Filipino dish cooked by stir-frying pre-cooked rice with garlic, shrimp, meat, and veggies</p>
+                    </div>
+
+                    <div class="tab-menu-item plt-item" id="menu-item-3">
+                        <button class="add-cart" type="button" name="platters" value="plt-3"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Pancit Malabon</h3>
+                            <p class="main-text center-text">$15</p>
+                        </div>
+                        <p class="main-text center-text">Topped with flavor-packed shrimp gravy and various seafood and garnishes</p>
+                    </div>
+
+                    <div class="tab-menu-item plt-item" id="menu-item-4">
+                        <button class="add-cart" type="button" name="platters" value="plt-4"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Paella</h3>
+                            <p class="main-text center-text">$12</p>
+                        </div>
+                        <p class="main-text center-text">made with saffron-infused rice, chicken, sausage, and seafood</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Desserts-->
+            <div id="Desserts" class="tabContent">
+                <div class="tab-items-container">
+
+                    <div class="tab-menu-item des-item" id="menu-item-1">
+                        <button class="add-cart" type="button" name="desserts" value="des-1"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Ube Ice Cream</h3>
+                            <p class="main-text center-text">$5</p>
+                        </div>
+                        <p class="main-text center-text">ice cream flavor prepared using purple yam as the main ingredient</p>
+                    </div>
+
+                    <div class="tab-menu-item des-item" id="menu-item-2">
+                        <button class="add-cart" type="button" name="desserts" value="des-2"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Pastillas</h3>
+                            <p class="main-text center-text">$3</p>
+                        </div>
+                        <p class="main-text center-text">candies made with sugar and milk are soft and creamy bites of heaven</p>
+                    </div>
+
+                    <div class="tab-menu-item des-item" id="menu-item-3">
+                        <button class="add-cart" type="button" name="desserts" value="des-3"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Pichi-Pichi</h3>
+                            <p class="main-text center-text">$8</p>
+                        </div>
+                        <p class="main-text center-text">steamed cake made of grated cassava and coconut juice, coated with grated coconut</p>
+                    </div>
+
+                    <div class="tab-menu-item des-item" id="menu-item-4">
+                        <button class="add-cart" type="button" name="desserts" value="des-4"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Coffee Jelly</h3>
+                            <p class="main-text center-text">$8</p>
+                        </div>
+                        <p class="main-text center-text">coffee-flavored gelatin generously drizzled with sweetened cream</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Salad-->
+            <div id="Salads" class="tabContent">
+                <div class="tab-items-container">
+
+                    <div class="tab-menu-item sal-item" id="menu-item-1">
+                        <button class="add-cart" type="button" name="salads" value="sld-1"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Mango-Tomato Salad</h3>
+                            <p class="main-text center-text">$10</p>
+                        </div>
+                        <p class="main-text center-text">ice cream flavor prepared using purple yam as the main ingredient</p>
+                    </div>
+
+                    <div class="tab-menu-item sal-item" id="menu-item-2">
+                        <button class="add-cart" type="button" name="salads" value="sld-2"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Cucumber Ensalada</h3>
+                            <p class="main-text center-text">$10</p>
+                        </div>
+                        <p class="main-text center-text">delicious medley of mangoes, tomatoes, onions, and cilantro tossed in vinaigrette dressing</p>
+                    </div>
+
+                    <div class="tab-menu-item sal-item" id="menu-item-3">
+                        <button class="add-cart" type="button" name="salads" value="sld-3"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Buko Salad</h3>
+                            <p class="main-text center-text">$8</p>
+                        </div>
+                        <p class="main-text center-text">made of shredded sweet young coconut, mixed fruits, nata de coco, sugar palm and cream</p>
+                    </div>
+
+                    <div class="tab-menu-item sal-item" id="menu-item-4">
+                        <button class="add-cart" type="button" name="salads" value="sld-4"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Macaroni Salad</h3>
+                            <p class="main-text center-text">$8</p>
+                        </div>
+                        <p class="main-text center-text">loaded with chicken, ham, cheese, crushed pineapple and macaroni</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Drinks-->
+            <div id="Drinks" class="tabContent">
+                <div class="tab-items-container">
+
+                    <div class="tab-menu-item dnk-item" id="menu-item-1">
+                        <button class="add-cart" type="button" name="drinks" value="dnk-1"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Lime Juice</h3>
+                            <p class="main-text center-text">$5</p>
+                        </div>
+                        <p class="main-text center-text">Filipino version of lemonade that is super refreshing and best served ice cold</p>
+                    </div>
+
+                    <div class="tab-menu-item dnk-item" id="menu-item-2">
+                        <button class="add-cart" type="button" name="drinks" value="dnk-2"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Ginger Tea</h3>
+                            <p class="main-text center-text">$7</p>
+                        </div>
+                        <p class="main-text center-text">made from fresh ginger and sweetened with honey and a few drops of lemon juice</p>
+                    </div>
+
+                    <div class="tab-menu-item dnk-item" id="menu-item-3">
+                        <button class="add-cart" type="button" name="drinks" value="dnk-3"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Melon Juice</h3>
+                            <p class="main-text center-text">$5</p>
+                        </div>
+                        <p class="main-text center-text">refreshing beverage made from shredded ripe cantaloupe flesh, water, and sugar</p>
+                    </div>
+
+                    <div class="tab-menu-item dnk-item" id="menu-item-4">
+                        <button class="add-cart" type="button" name="drinks" value="dnk-4"></button>
+                        <div class="tab-menu-item-title">
+                            <h3 class="main-text center-text">Buko Shake</h3>
+                            <p class="main-text center-text">$7</p>
+                        </div>
+                        <p class="main-text center-text">creamy and refreshing smoothie made with young coconut, milk, and simple syrup</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo-container">
+                <div class="footer-logo"></div>
+            </div>
+            <div class="sitemap">
+                <h3 class="main-text">SITEMAP</h3>
+                <a href="/index.html" class="content-text">HOME</a>
+                <a href="/dagat-menu.html" class="content-text">MENU</a>
+                <a href="/dagat-checkout.html" class="content-text">VIEW CART</a>
+            </div>
+            <div class="location">
+                <h3 class="main-text">LOCATION</h3>
+                <p class="content-text center-text">1664 Victoria Park Ave,<br />Toronto, Ontario M4A 2M5<br />phone: +1-416-285-9945</p>
+            </div>
+            <div class="hours">
+                <h3 class="main-text">OPENING HOURS</h3>
+                <table class="content-text center-text">
+                    <tr>
+                        <td>Lunch</td>
+                        <td>Dinner</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday and Sunday</td>
+                        <td>Thursday to Sunday</td>
+                    </tr>
+                    <tr>
+                        <td>Reservations</td>
+                        <td>Reservations</td>
+                    </tr>
+                    <tr>
+                        <td>from 12pm to 1.30pm</td>
+                        <td>from 6pm to 8.45pm</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="subscribe">
+                <h3 class="main-text">SUBSCRIBE TO FRESHNESS</h3>
+                <div class="sub-form">
+                    <form class="content-text">
+                        <label for="firstName">FIRST NAME: </label>
+                        <input id="firstName" name="firstName" />
+
+                        <label for="lastName">LAST NAME: </label>
+                        <input id="lastName" required maxlength="20" name="lastName" />
+
+                        <label for="email">EMAIL: </label>
+                        <input id="email" type="email" name="email" />
+
+                        <label for="phone">PHONE: </label>
+                        <input id="phone" type="tel" name="tel" />
+
+                        <button type="submit" class="main-text" id="btn-subscribe">SIGN UP</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p class="main-text">Copyright &copy; 2023, DAGAT RESTAURANT</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="dagat-menu.js"></script>
+</body>
+</html>
+<!--bnhf-->

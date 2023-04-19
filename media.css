@@ -1,0 +1,1038 @@
+@media only screen and (max-width: 360px) {
+    html {
+        font-size: 35%;
+    }
+
+    .cart-bottom > p:first-child {
+        width: 70px;
+    }
+
+    .collapse-nav > a {
+        font-size: 5rem;
+    }
+
+    .banner-content {
+        width: 90%;
+    }
+
+    .section-about {
+        flex-direction: column;
+    }
+
+    .section-about > div {
+        width: 100%;
+    }
+
+    .about-text {
+        height: 100%;
+    }
+
+    .featured-text {
+        width: 95%;
+        text-align: center;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .featured-text > p {
+        font-size: 1.5rem;
+    }
+
+    .featured-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-img {
+        height: 100%;
+    }
+
+    .menu-text > h3 {
+        font-size: 6rem;
+    }
+
+    .menu-text > p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .menu-text > a {
+        font-size: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .footer-content > div {
+        width: 100%;
+    }
+
+    .item-img {
+        display: none;
+    }
+
+    .item-desc {
+        height: 22rem;
+        display: block;
+        top: 3rem;
+        margin: auto 3rem;
+    }
+
+    .item-container {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .menu-items {
+        overflow-x: auto;
+    }
+
+    .menu-items::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    .menu-items::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 20px;
+    }
+
+    .section-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .tab-items-container {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .tab {
+        width: 35%;
+    }
+
+    .tabContent {
+        width: 65%;
+    }
+
+    .tabLink {
+        font-size: 2.5rem;
+    }
+
+    .tab-menu-item::before {
+        width: 8rem;
+        height: 8rem;
+        top: 0.5rem;
+        left: 0rem;
+    }
+
+    .tab-menu-item {
+        width: 90%;
+        height: 10rem;
+    }
+
+    .tab-menu-item > p {
+        font-size: 1.3rem;
+        width: 63%;
+        margin-left: 8.5rem;
+    }
+
+    .tab-menu-item-title > h3 {
+        font-size: 2rem;
+        margin-left: 9rem;
+    }
+
+    .tab-menu-item-title > p {
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+
+    .tab-menu-item:active > .add-cart {
+        display: block;
+    }
+
+    .add-cart {
+        top: 3rem;
+        left: 2.3rem;
+    }
+
+    .section-order {
+        flex-direction: column;
+    }
+
+    .summary-order {
+        width: 100%;
+        height: 100%;
+    }
+
+    .customer-info {
+        width: 100%;
+        height: 100%;
+    }
+
+    .table-wrapper {
+        width: 100%;
+    }
+
+    #order-table {
+        width: 100%;
+    }
+
+    .table-wrapper thead {
+        font-size: 1.7rem;
+    }
+
+    #order-table tbody {
+        font-size: 1.4rem;
+    }
+
+    .table-wrapper tfoot {
+        font-size: 1.7rem;
+    }
+
+    .staff-stat {
+        flex-direction: column;
+    }
+
+    .staff-stat-container {
+        width: 70%;
+    }
+
+    .staff-summary {
+        flex-direction: column;
+    }
+
+    .staff-summary > div {
+        width: calc(100% - 40px);
+    }
+
+    #staff-order-history > thead {
+        font-size: 1.8rem;
+    }
+
+    #staff-order-history > tbody {
+        font-size: 1.5rem;
+    }
+
+    .main-text {
+        text-align: center;
+    }
+
+    .staff-ord-tab-container {
+        overflow: auto;
+    }
+
+    .staff-ord-tab-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+    .staff-ord-tab-container::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 20px;
+    }
+
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 600px) {
+
+    html {
+        font-size: 45%;
+    }
+
+    .cart-bottom > p:first-child {
+        width: 100px;
+    }
+
+    #collapse-cart > table {
+        font-size: 2rem;
+    }
+
+    .cart-bottom > p:first-child {
+        font-size: 2.5rem;
+    }
+
+    .cart-bottom > p:nth-child(2) {
+        font-size: 2.5rem;
+    }
+
+    #btn-checkout {
+        font-size: 1.5rem;
+    }
+
+    #collapse-cart > table button {
+        font-size: 2rem;
+    }
+
+
+    .collapse-nav > a {
+        font-size: 5rem;
+    }
+
+    .banner-content {
+        width: 90%;
+    }
+
+    .section-about {
+        flex-direction: column;
+    }
+
+    .section-about > div {
+        width: 100%;
+    }
+
+    .about-text {
+        height: 100%;
+    }
+
+    .featured-text {
+        width: 95%;
+        text-align: center;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .featured-text > p {
+        font-size: 1.5rem;
+    }
+
+    .featured-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-img {
+        height: 100%;
+    }
+
+    .menu-text > h3 {
+        font-size: 6rem;
+    }
+
+    .menu-text > p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .menu-text > a {
+        font-size: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .footer-content > div {
+        width: 100%;
+    }
+
+    .item-img {
+        display: none;
+    }
+
+    .item-desc {
+        height: 22rem;
+        display: block;
+        top: 3rem;
+        margin: auto 3rem;
+    }
+
+    .item-container {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .menu-items {
+        overflow-x: auto;
+    }
+
+    .menu-items::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .menu-items::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 20px;
+    }
+
+    .section-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .tab-items-container {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .tab {
+        width: 35%;
+    }
+
+    .tabContent {
+        width: 65%;
+    }
+
+    .tabLink {
+        font-size: 2.5rem;
+    }
+
+    .tab-menu-item::before {
+        width: 8rem;
+        height: 8rem;
+        top: 0.5rem;
+        left: 0rem;
+    }
+
+    .tab-menu-item {
+        width: 90%;
+        height: 10rem;
+    }
+
+    .tab-menu-item > p {
+        font-size: 1.3rem;
+        width: 63%;
+        margin-left: 8.5rem;
+    }
+
+    .tab-menu-item-title > h3 {
+        font-size: 2rem;
+        margin-left: 9rem;
+    }
+
+    .tab-menu-item-title > p {
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+
+    .tab-menu-item:active > .add-cart {
+        display: block;
+    }
+
+    .add-cart {
+        top: 3rem;
+        left: 2.3rem;
+    }
+
+    .section-order {
+        flex-direction: column;
+    }
+
+    .summary-order {
+        width: 100%;
+        height: 100%;
+    }
+
+    .customer-info {
+        width: 100%;
+        height: 100%;
+    }
+
+    .table-wrapper {
+        width: 100%;
+    }
+
+    #order-table {
+        width: 100%;
+    }
+
+    .table-wrapper thead {
+        font-size: 1.7rem;
+    }
+
+    #order-table tbody {
+        font-size: 1.4rem;
+    }
+
+    .table-wrapper tfoot {
+        font-size: 1.7rem;
+    }
+
+    .staff-stat {
+        flex-direction: column;
+    }
+
+    .staff-stat-container {
+        width: 70%;
+    }
+
+    .staff-summary {
+        flex-direction: column;
+    }
+
+    .staff-summary > div {
+        width: calc(100% - 40px);
+    }
+
+    #staff-order-history > thead {
+        font-size: 1.8rem;
+    }
+
+    #staff-order-history > tbody {
+        font-size: 1.5rem;
+    }
+
+    .main-text {
+        text-align: center;
+    }
+
+    .staff-ord-tab-container {
+        overflow: auto;
+    }
+
+    .staff-ord-tab-container::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .staff-ord-tab-container::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+    html {
+        font-size: 40%;
+    }
+
+    .cart-bottom > p:first-child {
+        width: 100px;
+    }
+
+    #collapse-cart > table {
+        font-size: 2rem;
+    }
+
+    .cart-bottom > p:first-child {
+        font-size: 2.5rem;
+    }
+
+    .cart-bottom > p:nth-child(2) {
+        font-size: 2.5rem;
+    }
+
+    #btn-checkout {
+        font-size: 1.5rem;
+    }
+
+    #collapse-cart > table button {
+        font-size: 2rem;
+    }
+
+    .collapse-nav > a {
+        font-size: 4rem;
+    }
+
+    .banner-content {
+        width: 70%;
+    }
+
+    .section-about {
+        flex-direction: column;
+    }
+
+    .section-about > div {
+        width: 100%;
+    }
+
+    .featured-text {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .featured-text > p {
+        font-size: 0.5rem;
+    }
+
+    .featured-text > p:first-of-type {
+        font-size: 1.5rem;
+    }
+
+    .featured-text > h3 {
+        font-size: 8rem;
+    }
+
+    .about-img {
+        height: 100%;
+    }
+
+    .featured-img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo-container {
+        width: 33%;
+        margin-top: 10px;
+    }
+
+    .sitemap, .location {
+        width: 30%;
+    }
+
+    .hours, .subscribe {
+        width: 50%;
+    }
+
+    .item-img {
+        display: none;
+    }
+
+    .item-desc {
+        height: 22rem;
+        display: block;
+        top: 3rem;
+        margin: auto;
+    }
+
+    .item-container {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .menu-items {
+        overflow-x: auto;
+    }
+
+    .menu-items::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .menu-items::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 20px;
+    }
+
+    .section-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .tab-items-container {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .tab {
+        width: 35%;
+    }
+
+    .tabContent {
+        width: 65%;
+        padding-left: 8rem;
+    }
+
+    .tabLink {
+        font-size: 3rem;
+    }
+
+    .tab-menu-item {
+        margin: auto;
+        width: 70%;
+    }
+
+   .tab-menu-item:active > .add-cart {
+       display: block;
+   }
+
+    .add-cart {
+        width: 6rem;
+        height: 6rem;
+        top: 3.5rem;
+        left: -4rem;
+    }
+
+    .tab-menu-item-title > h3 {
+        font-size: 2rem;
+        margin-left: 7rem;
+    }
+
+    .tab-menu-item-title > p {
+        font-size: 2rem;
+    }
+
+    .tab-menu-item > p {
+        font-size: 1.3rem;
+    }
+
+    .summary-order {
+        width: 70%;
+        height: 100%;
+    }
+
+    .customer-info {
+        width: 30%;
+        height: 100%;
+    }
+
+    .table-wrapper {
+        width: 100%;
+    }
+
+    .table-wrapper thead {
+        font-size: 1.7rem;
+    }
+
+    .table-wrapper tfoot {
+        font-size: 1.7rem;
+    }
+
+    #order-table tbody {
+        font-size: 1.5rem;
+    }
+
+    #order-form > label {
+        font-size: 1.7rem;
+        width: auto;
+    }
+
+    .staff-stat {
+        flex-wrap: wrap;
+    }
+
+    .staff-stat-container {
+        width: 35%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    html {
+        font-size: 45%;
+    }
+
+    #collapse-cart > table {
+      font-size: 2rem;
+    }
+
+    .cart-bottom > p:first-child {
+      font-size: 2.5rem;
+    }
+    
+    .cart-bottom > p:nth-child(2) {
+      font-size: 2.5rem;
+    }
+    
+    #btn-checkout {
+      font-size: 1.5rem;
+    }
+    
+    #collapse-cart > table button {
+      font-size: 2rem;
+    }
+
+    .cart-bottom > p:first-child {
+        width: 120px;
+    }
+
+    .banner-content {
+        width: 50%;
+    }
+
+    .banner-content > h1 {
+        font-size: 15rem;
+        line-height: 11rem;
+    }
+
+    .reserve-link > a {
+        font-size: 3rem;
+    }
+
+    .section-about {
+        flex-direction: column;
+    }
+
+    .section-about > div {
+        width: 100%;
+    }
+
+    .featured-text {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .featured-text > p {
+        font-size: 1.8rem;
+    }
+
+    .featured-text > p:first-of-type {
+        font-size: 2rem;
+    }
+
+    .featured-text > h3 {
+        font-size: 10rem;
+    }
+
+    .featured-text {
+        position: relative;
+        top: 4rem;
+    }
+
+    .about-img {
+        height: 100%;
+    }
+
+    .featured-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .item-img {
+        display: none;
+    }
+
+    .item-desc {
+        height: 22rem;
+        display: block;
+        top: 3rem;
+        margin: auto;
+        width: 25rem;
+    }
+
+    .item-desc > p {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .item-desc::before {
+        width: 14rem;
+        height: 14rem;
+        top: -8rem;
+        right: 4.5rem;
+    }
+
+    .item-container {
+        width: 100%;
+        height: 40rem;
+    }
+
+    .menu-items {
+        overflow-x: auto;
+    }
+
+    .menu-items::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .menu-items::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 20px;
+    }
+
+    .section-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .menu-text > h3 {
+        font-size: 10rem;
+    }
+
+    .menu-text > p {
+        font-size: 2.5rem;
+    }
+
+    .logo-container {
+        width: 15%;
+    }
+
+    .hours, .subscribe {
+        width: 30%;
+    }
+
+    .tab-items-container {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .tab {
+        width: 35%;
+    }
+
+    .tabContent {
+        width: 65%;
+        padding-left: 8rem;
+    }
+
+    .tabLink {
+        font-size: 3rem;
+    }
+
+    .tab-menu-item {
+        margin: auto;
+        width: 70%;
+    }
+
+    .tab-menu-item:active > .add-cart {
+        display: block;
+    }
+
+    .add-cart {
+        width: 6rem;
+        height: 6rem;
+        top: 3.5rem;
+        left: -4rem;
+    }
+
+    .tab-menu-item-title > h3 {
+        font-size: 2rem;
+        margin-left: 7rem;
+    }
+
+    .tab-menu-item-title > p {
+        font-size: 2rem;
+    }
+
+    .tab-menu-item > p {
+        font-size: 1.3rem;
+    }
+
+    .summary-order {
+        width: 70%;
+        height: 100%;
+    }
+
+    .customer-info {
+        width: 30%;
+        height: 100%;
+    }
+
+    .table-wrapper {
+        width: 100%;
+    }
+
+    .table-wrapper thead {
+        font-size: 1.7rem;
+    }
+
+    .table-wrapper tfoot {
+        font-size: 1.7rem;
+    }
+
+    #order-table tbody {
+        font-size: 1.5rem;
+    }
+
+    #order-form > label {
+        font-size: 1.7rem;
+        width: auto;
+    }
+
+    .staff-stat {
+        flex-wrap: wrap;
+    }
+
+    .staff-stat-container {
+        width: 35%;
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+    .cart-bottom > p:first-child {
+        width: 110px;
+    }
+
+    .tab-menu-item {
+        margin-left: 25%;
+        margin-block: auto;
+    }
+
+    .item-img {
+        display: none;
+    }
+
+    .item-desc {
+        height: 22rem;
+        display: block;
+        top: 3rem;
+        margin: auto;
+        width: 25rem;
+    }
+
+    .item-desc > p {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .item-desc::before {
+        width: 14rem;
+        height: 14rem;
+        top: -8rem;
+        right: 4.5rem;
+    }
+
+    .item-container {
+        width: 100%;
+        height: 40rem;
+    }
+
+    .menu-items {
+        overflow-x: auto;
+    }
+
+    .menu-items::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .menu-items::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 20px;
+    }
+
+    .section-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .tab-menu-item-title > h3 {
+        margin-left: 60px;
+    }
+
+    .tab-menu-item:active > .add-cart {
+        display: block;
+    }
+
+    .add-cart {
+        width: 6rem;
+        height: 6rem;
+        top: 3.5rem;
+        left: -4rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 1400px) {
+    html {
+        font-size: 70%;
+    }
+}

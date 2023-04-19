@@ -1,0 +1,143 @@
+
+/*ORDER PAGE*/
+.section-order {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-page-title::before {
+    content: '';
+    background: url(crab.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 7rem;
+}
+
+
+/*ORDER - SECTION ORDER*/
+.summary-order {
+    width: 65vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summary-order > h3 {
+    margin: 20px;
+    font-size: 3rem;
+    color: #ce1126;
+}
+
+#order-table {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    position: relative;
+    overflow: auto;
+}
+
+.table-wrapper thead {
+    position: sticky;
+    top: 0;
+    background-color: #0038a8;
+    font-size: 2rem;
+    color: white;
+    font-weight: normal;
+}
+
+.table-wrapper tfoot {
+    position: sticky;
+    bottom: 0;
+    font-size: 2rem;
+    background-color: #0038a8;
+    color: white;
+}
+
+#order-table tbody {
+    font-size: 1.8rem;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #0038a8;
+    border-radius: 20px;
+}
+
+#order-table tfoot tr > td:last-child {
+    background-color: #0038a8;
+    color: white;
+}
+
+#order-table th,
+#order-table td {
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+
+/*ORDER - SECTION CUSTOMER*/
+.customer-info {
+    width: 35vw;
+    height: 100vh;
+    background-color: #fcd116;
+}
+
+.customer-info > h3 {
+    margin: 20px;
+    font-size: 3rem;
+    color: #ce1126;
+}
+
+#order-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#order-form > label {
+    margin-right: 0;
+    text-align: left;
+    font-size: 2rem;
+    color: black;
+}
+
+#order-form > input {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding: 5px;
+    border: 2px solid #ce1126;
+    border-radius: 5px;
+}
+
+#btn-order-now {
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.8rem;
+    align-self: flex-end;
+    border-radius: 8px;
+    background-color: #ce1126;
+    color: #fcd116;
+    margin-top: 10px;
+}
+
+#btn-order-now:hover {
+    cursor: pointer;
+}
+

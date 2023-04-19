@@ -1,0 +1,163 @@
+
+
+/*STAFF PAGE*/
+.section-staff {
+    margin-top: 50px;
+    background-color: white;
+    min-height: 150vh;
+}
+
+.staff-stat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.staff-stat-container {
+    width: 24%;
+    margin: 20px;
+    padding: 15px;
+    font-size: 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.staff-overview > div:first-child {
+    font-size: 4rem;
+    display: block;
+    padding: 20px 20px 0 20px;
+}
+
+.staff-stat-container > * {
+    margin: 0;
+}
+
+.staff-stat-container > p {
+    padding: 5px;
+}
+
+.staff-stat-container > h3 {
+    font-weight: 400;
+}
+
+.staff-stat-container :nth-child(2) {
+    float: right;
+}
+
+#staff-earnings {
+    border: 3px solid #228B22;
+    color: #228B22;
+}
+
+#staff-pending {
+    border: 3px solid #ce1126;
+    color: #ce1126;
+}
+
+#staff-preparing {
+    border: 3px solid #1E90FF;
+    color: #1E90FF;
+}
+
+#staff-completed {
+    border: 3px solid #DAA520;
+    color: #DAA520;
+}
+
+.stat-info {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4rem;
+}
+
+.staff-summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.staff-summary > div {
+    width: 50%;
+    margin: 20px;
+}
+
+.staff-summary > div > h3 {
+    font-size: 2.5rem;
+    color: #0038a8;
+}
+
+.staff-summary > div > div {
+    border: solid 2px #0038a8;
+    max-height: 25rem;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.staff-summary > div > div::-webkit-scrollbar {
+    width: 5px;
+}
+
+.staff-summary > div > div::-webkit-scrollbar-thumb {
+    background-color: #0038a8;
+    border-radius: 20px;
+}
+
+.cus-summary-container > * {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.staff-summary h4 {
+    font-weight: bold;
+}
+
+.staff-summary p {
+    font-weight: normal;
+}
+
+.cus-summary-container > :nth-child(even) {
+    margin-bottom: 10px;
+}
+
+.ord-summary-container > * {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.ord-summary-container > :nth-child(even) {
+    margin-bottom: 10px;
+}
+
+.staff-recent-orders > * {
+    display: block;
+    margin: 20px;
+}
+
+.staff-recent-orders > h3 {
+    font-size: 3rem;
+    color: #ce1126;
+}
+
+#staff-order-history * {
+    text-align: center;
+}
+
+#staff-order-history {
+    border-collapse: collapse;
+}
+
+#staff-order-history th,
+#staff-order-history td {
+    padding: 10px;
+}
+
+#staff-order-history > thead {
+    font-size: 2rem;
+}
+
+#staff-order-history > tbody {
+    font-size: 1.8rem;
+}
+
+#staff-order-history th {
+    border-bottom: solid 2px black;
+}

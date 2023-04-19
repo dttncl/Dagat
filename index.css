@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Lobster&family=Londrina+Solid&family=Roboto+Condensed&display=swap');
+
+/*GLOBAL*/
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-text {
+    font-family: 'Londrina Solid';
+    font-weight: 300;
+    margin: 0;
+}
+
+.content-text {
+    font-family: 'Arial Narrow','Franklin Gothic Medium', Arial, sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+.caption {
+    font-family: 'Lobster';
+    font-weight: 400;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center-text {
+    text-align: center;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+
+/*HEADER*/
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+/*ORDER CART*/
+#collapse-cart {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    max-height: 400px;
+    overflow: auto;
+    min-width: var(--cartWidth);
+    background-color: white;
+    padding: var(--cartPadding);
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 20px;
+}
+
+#collapse-cart > table {
+    text-align: center;
+    font-size: 1.5rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+#collapse-cart > table  td {
+    padding: 5px;
+    text-transform: uppercase;
+    color: #0038a8; 
+}
+
+#collapse-cart > h3 {
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: #ce1126; 
+}
+
+#collapse-cart th {
+    background-color: #fcd116;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+#collapse-cart > table button {
+    font-size: 1.2rem;
+    padding: 8px;
+    background-color: white;
+    color: red;
+}
+
+#collapse-cart > table button:hover {
+    background-color: #ce1126 ;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+}
+
+.cart-bottom > * {
+    margin-top: 10px;
+}
+
+.cart-bottom > p:first-child {
+    font-size: 2rem;
+    width: 25%;
+    float: left;
+}
+
+.cart-bottom > p:nth-child(2) {
+    font-size: 2rem;
+    width: 50px;
+    float: left;
+}
+
+#btn-checkout {
+    width: 100px;
+    float: right;
+    font-size: 1.2rem;
+    padding: 5px;
+    background-color: #0038a8;
+    color: white;
+    border: 2px solid transparent;
+}
+
+#btn-checkout:hover {
+    cursor: pointer;
+    color: #0038a8;
+    border: 2px solid #0038a8;
+    background-color: white;
+}
+
+/*NAVIGATION*/
+.header-nav {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    padding: 5px 15px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.header-icon-cart,
+.header-icon-crab {
+    height: 30px;
+}
+
+.header-icon-cart {
+    background: url(cart.png);
+    background-size: contain;
+    background-position: center;
+    width: 30px;
+}
+
+.header-icon-crab > img {
+    max-height: 100%;
+    object-fit:cover;
+}
+
+.burger-nav {
+    position: relative;
+    height: 30px;
+    width: 45px;
+    top: 5px;
+}
+
+.burger-nav:hover {
+    cursor: pointer;
+}
+
+.burger-nav > span {
+    position: absolute;
+    height: 7%;
+    width: 60%;
+    z-index: 10;
+    background-color:#ce1126;
+}
+
+.burger-nav > span:nth-child(1) {
+    top: 0;
+}
+
+.burger-nav > span:nth-child(2) {
+    top: 8px;
+}
+
+.burger-nav > span:nth-child(3) {
+    top: 16px;
+}
+
+.collapse-nav > a {
+    color: #0038a8;
+    display: block;
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+}
+
+#staff-link {
+    display: none;
+}
+
+.collapse-nav > a:hover {
+    color: #ce1126 ;
+}
+
+.collapse-nav {
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-right: 1px solid #0038a8;
+    font-size: 0.3rem;
+}
+
+#main-nav-menu {
+    width: 0;
+}
+
+/*HEADER BANNER*/
+.banner {
+    background: url(header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4rem;
+}
+
+.banner::before {
+    content: '';
+    background-color: #0038A8;
+    position: absolute;
+    opacity: 40%;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-content {
+    position: relative;
+    z-index:1;
+    width: 40%;
+}
+
+.banner-content > * {
+    color: white;
+    text-align: center;
+
+}
+
+.banner-content > h1 {
+    font-size: 10rem; 
+    line-height: 8rem;
+}
+
+.banner-content > h2 {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+}
+
+.reserve-link {
+    position: relative;
+    z-index: 1;
+    width: auto;
+}
+
+.reserve-link > a {
+    font-size: 2rem;
+    background-color: #fcd116;
+    color: #ce1126; 
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.reserve-link > a:hover {
+    box-shadow: 7px 7px;
+}
+
+/*HOME - MAIN*/
+main {
+    
+}
+
+.border {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    bottom: 50%;
+}
+
+/*FOOTER*/
+footer {
+    display: grid;
+    grid-template-rows: 1fr 15%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'footer' 'copyright';
+    row-gap: 10px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-content > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo-container {
+    width: 14%;
+}
+
+.footer-logo {
+    background: url(dagat-logo-no-bg.png);
+    background-position: center;
+    background-size: cover;
+    width: 12rem;
+    height: 12rem;
+    margin: auto;
+}
+
+.sitemap,
+.location {
+    width: 18%;
+}
+
+.hours,
+.subscribe {
+    width: 25%;
+}
+
+.footer-content > div > h3 {
+    font-size: 2.5rem;
+    padding: 20px 0 5px 0;
+    color: #ce1126;
+}
+
+.footer-content > div > :not(.main-text) {
+    font-size: 1.5rem;
+    color: #0038a8;
+}
+
+table {
+    width: 100%;
+}
+label {
+    display: block;
+    float: left;
+    clear: left;
+    width: 30%;
+    margin-bottom: 8px;
+    text-align: right;
+    margin-right: 5px;
+    color: #0038a8;
+}
+
+input {
+    float: left;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+    border: 0px;
+    border-bottom: 1.2px solid #0038a8;
+}
+
+#btn-subscribe {
+    width: 40%;
+    background-color: #fcd116;
+    padding: 0.5rem 0.5rem;
+    margin: 1rem 1.5rem 0 0;
+    border: none;
+    cursor: pointer;
+    float: right;
+    color: black;
+}
+
+td {
+    padding: 0;
+    width: 3rem;
+}
+
+.copyright {
+    background-color: #ce1126;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fcd116;
+    font-size: 2rem;
+    height: fit-content;
+}
+
