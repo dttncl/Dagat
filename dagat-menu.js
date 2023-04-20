@@ -46,7 +46,7 @@ function loadMenu() {
 
     // load the app imgs by default
     for (let i = 0; i < appItem.length; i++) {
-        appItem[i].style.setProperty("--menuItemBackground", `url(/menu-img/${arrAppImgs[i]})`);
+        appItem[i].style.setProperty("--menuItemBackground", `url(menu-img/${arrAppImgs[i]})`);
     }
 
     // add to cart function for appetizers
@@ -56,7 +56,7 @@ function loadMenu() {
     // load the specials imgs on click
     document.querySelector(".tab > button:nth-child(2)").addEventListener("click", () => {
         for (let i = 0; i < spcItem.length; i++) {
-            spcItem[i].style.setProperty("--menuItemBackground", `url(/menu-img/${arrSpcImgs[i]})`);
+            spcItem[i].style.setProperty("--menuItemBackground", `url(menu-img/${arrSpcImgs[i]})`);
         }
 
         // add to cart function for specials
@@ -67,7 +67,7 @@ function loadMenu() {
     // load the platter imgs on click
     document.querySelector(".tab > button:nth-child(3)").addEventListener("click", () => {
         for (let i = 0; i < pltItem.length; i++) {
-            pltItem[i].style.setProperty("--menuItemBackground", `url(/menu-img/${arrPltImgs[i]})`);
+            pltItem[i].style.setProperty("--menuItemBackground", `url(menu-img/${arrPltImgs[i]})`);
         }
 
         // add to cart function for platters
@@ -78,7 +78,7 @@ function loadMenu() {
     // load the desserts imgs on click
     document.querySelector(".tab > button:nth-child(4)").addEventListener("click", () => {
         for (let i = 0; i < desItem.length; i++) {
-            desItem[i].style.setProperty("--menuItemBackground", `url(/menu-img/${arrDesImgs[i]})`);
+            desItem[i].style.setProperty("--menuItemBackground", `url(menu-img/${arrDesImgs[i]})`);
         }
 
         // add to cart function for desserts
@@ -89,7 +89,7 @@ function loadMenu() {
     // load the salad imgs on click
     document.querySelector(".tab > button:nth-child(5)").addEventListener("click", () => {
         for (let i = 0; i < salItem.length; i++) {
-            salItem[i].style.setProperty("--menuItemBackground", `url(/menu-img/${arrSalImgs[i]})`);
+            salItem[i].style.setProperty("--menuItemBackground", `url(menu-img/${arrSalImgs[i]})`);
         }
 
         // add to cart function for platters
@@ -99,7 +99,7 @@ function loadMenu() {
 
     document.querySelector(".tab > button:nth-child(6)").addEventListener("click", () => {
         for (let i = 0; i < dnkItem.length; i++) {
-            dnkItem[i].style.setProperty("--menuItemBackground", `url(/menu-img/${arrDnkImgs[i]})`);
+            dnkItem[i].style.setProperty("--menuItemBackground", `url(menu-img/${arrDnkImgs[i]})`);
         }
 
         // add to cart function for drinks
