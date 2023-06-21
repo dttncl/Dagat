@@ -3,7 +3,7 @@
 Sail with us through the flavors of the pearl of the orient seas.
 This restaurant website project is inspired by the flavors of the Philippines.
 
-### 🎮 Features
+### 🛒 Features
 
 1. Responsive web design (mobile to desktop)
 2. Customizable cart content in a collapsible overlay from the nav bar
