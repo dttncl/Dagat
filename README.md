@@ -1,9 +1,7 @@
-# Dagat Restaurant
+# Dagat Restaurant (Seafood Restaurant)
 
-This is my first website made from scratch using:
-- HTML
-- CSS
-- JavaScript
-- localStorage
+Sail with us through the flavors of the pearl of the orient seas.
+This restaurant website project is inspired by the flavors of the Philippines.
 
-For this class, the task is to create a responsive restaurant menu website will feature a home page with a presentation of the restaurant, a menu page where customers can browse through all the menu items (with photo, description and price) and add them to the cart. 
+### Implementation
+This is a responsive restaurant menu website that features a home page with a presentation of the restaurant, a menu page where customers can browse through all the menu items (with photo, description and price) and add them to the cart. It uses DOM to manipulate HTML elements, handle events, and update the content dynamically. localStorage is also used to store user preferences, such as customized menu items to provide a personalized experience.
