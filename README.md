@@ -1,9 +1,9 @@
 # Dagat Restaurant (Seafood Restaurant)
 
-### 💻 [Live Demo](https://dttncl.github.io/DagatRestaurant/)
-
-Sail with us through the flavors of the pearl of the orient seas.
+Sail with us through the flavors of the pearl of the orient seas.<br>
 This restaurant website project is inspired by the flavors of the Philippines.
+
+### 💻 [Live Demo](https://dttncl.github.io/DagatRestaurant/)
 
 ### 🛒 Features
 
