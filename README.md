@@ -18,4 +18,5 @@ This is a responsive restaurant menu website that features a home page with a pr
 ### 📸 Snapshots
 ![home-snap](https://github.com/dttncl/DagatRestaurant/assets/82695034/3594e08e-cd34-465f-89dc-469dec2f5185)
 ![menu-snap](https://github.com/dttncl/DagatRestaurant/assets/82695034/8b37a97c-dc57-4a29-b563-11c29e11f83f)
-<img width="642" alt="image" src="https://github.com/dttncl/DagatRestaurant/assets/82695034/f73eec6c-6e5a-496a-8635-8671b49f65f5">
+<img width="641" alt="image" src="https://github.com/dttncl/DagatRestaurant/assets/82695034/470765d4-2fef-4294-bfe3-335deb389584">
+
